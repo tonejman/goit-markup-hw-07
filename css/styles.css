@@ -569,6 +569,8 @@ section {
 
 .footer-send__icon {
   margin-left: 24px;
+  --color: var(--white-joint-color);
+fill: var(--color);
 }
 
 .footer-news__input {
