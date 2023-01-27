@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw07-main page</title>
+    <title>hw06-main page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -489,7 +489,7 @@
           <svg width="17" height="17">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button> 
+        </button>
         <form class="modal-form" method="GET" name="contactForm">
           <ul class="modal-windows">
             <li class="modal-window">
@@ -534,29 +534,37 @@
             <li class="modal-window">
               <label class="modal-label" for="user-feedback">Komentarz</label>
               <textarea
-              class="modal-textarea"
+                class="modal-textarea"
                 name="feedback"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </li>
+
             <li class="modal-window">
-              <label class="modal-label__choice" for="confirm">Oświadczam iż akceptuję
-                <a class="modal-label__link" href="#" target="_blank">Regulamin</a>
-                i <a class="modal-label__link" href="#" target="_blank">Politykę prywatności</a>
-              <svg class="modal-icon" width="11" height="8">
-               <use href="./images/icons.svg#icon-checkbox"></use>
-             </svg>
-             <input
-               class="modal-input__choice"
-               type="checkbox"
-               name="confirm"
-               id="confirm"
-               value="accepted"
-             />
+              <input
+                class="modal-input__choice"
+                type="checkbox"
+                name="confirm"
+                id="statute"
+                value="accepted"
+                
+              />
+              <label class="modal-label__choice" for="statute"
+                >Oświadczam iż akceptuję
+                <a class="modal-label__link" href="#" target="_blank"
+                  >Regulamin</a
+                >
+                i
+                <a class="modal-label__link" href="#" target="_blank"
+                  >Politykę prywatności</a
+                >
+                <svg class="modal-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
               </label>
             </li>
           </ul>
-            <button class="modal-button" type="submit">Wyślij</button>
+          <button class="modal-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

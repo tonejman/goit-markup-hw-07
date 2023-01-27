@@ -564,13 +564,21 @@ section {
   color: var(--white-joint-color);
   font-size: 16px;
   line-height: 1.87;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .footer-send__icon {
   margin-left: 24px;
   --color: var(--white-joint-color);
-fill: var(--color);
+  fill: var(--color);
 }
 
 .footer-news__input {
@@ -747,7 +755,7 @@ textarea {
 .modal-textarea {
   height: 120px;
   resize: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 12px 16px;
   --color-border: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -769,19 +777,26 @@ textarea {
   border: 2px solid var(--secondary-color);
   border-radius: 2px;
   position: absolute;
-  left: -20px;
+  left: 16px;
+  top: 4px;
 
   cursor: pointer;
 }
 
-.modal-label__choice {
+.modal-input__choice .modal-label__choice {
+  /* line-height: 1.71; */
+
+  /* color: var(--color-third); */
+
   position: relative;
+
+  /* position: relative;
   cursor: pointer;
-  font-family: var(--primary-fonts);
+  font-family: var(--primary-fonts); */
   color: var(--primary-color);
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em;
   font-size: 14px;
-  margin-left: 7px;
+  margin-left: 7px; */
 }
 
 .modal-input__choice:checked + .modal-label__choice::before {
@@ -805,8 +820,14 @@ textarea {
   color: var(--white-joint-color);
   font-size: 16px;
   line-height: 1.87;
-  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-window:nth-child(1) .modal-icon,
@@ -833,26 +854,34 @@ textarea {
 }
 
 .modal-input__choice {
-  position: absolute;
-  left: -20px;
-  bottom: 1px;
+  appearance: none;
+  position: relative;
+  /* left: 80px; */
+  top: 4px;
+  left: -5px;
+  /* margin-top: 20px; */
+  /*bottom: 1px;*/
   cursor: pointer;
-  width: 17px;
-  height: 16px;
+  width: 15px;
+  height: 14px;
   border-radius: 2px;
-  --color1: var(--blue-font-color);
-  fill: var(--color1);
+  /* --color1: var(--blue-font-color);
+  fill: var(--color1); */
 }
 
 .modal-window:nth-child(5) {
   flex-direction: row;
   justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .modal-window:nth-child(5) .modal-icon {
   position: absolute;
-  top: 2px;
-  left: -18px;
+  top: 7px;
+  left: 19px;
+  cursor: pointer;
 }
 
 .modal-window {
