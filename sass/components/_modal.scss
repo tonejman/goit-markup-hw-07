@@ -38,64 +38,60 @@
   &__form {
     margin: 0 40px;
   }
-}
-
-.modal__label {
-  font-size: 12px;
-  line-height: 1.17;
-  margin-bottom: 4px;
-  &-link {
-    display: inline-block;
-    color: $decorColor;
+  &__input {
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid $borderModalColor;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    &-choice {
+      appearance: none;
+      position: relative;
+      left: -5px;
+      cursor: pointer;
+      width: 15px;
+      height: 14px;
+      border-radius: 2px;
+      &:checked + .modal__label-choice::before {
+        background-color: $decorColor;
+        border-color: $decorColor;
+      }
+      & .modal__label-choice {
+        position: relative;
+        color: $primaryColor;
+      }
+    }
+    &:focus-within + .modal__icon {
+      fill: $decorColor;
+      transition: outline $slowChange;
+    }
   }
-  &-choice::before {
-    display: block;
-    content: "";
-    width: 16px;
-    height: 15px;
-    border: 2px solid $secondaryColor;
-    border-radius: 2px;
-    position: absolute;
-    left: 16px;
-    top: 4px;
-    cursor: pointer;
-  }
-}
-
-.modal__input {
-  height: 40px;
-  padding-left: 40px;
-  border: 1px solid $borderModalColor;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.modal__input-choice {
-  appearance: none;
-  position: relative;
-  left: -5px;
-  cursor: pointer;
-  width: 15px;
-  height: 14px;
-  border-radius: 2px;
-  &:checked + .modal__label-choice::before {
-    background-color: $decorColor;
-    border-color: var$decorColor;
-  }
-  & .modal__label-choice {
-    position: relative;
-    color: $primaryColor;
+  &__label {
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 4px;
+    &-link {
+      display: inline-block;
+      color: $decorColor;
+    }
+    &-choice::before {
+      display: block;
+      content: "";
+      width: 16px;
+      height: 15px;
+      border: 2px solid $secondaryColor;
+      border-radius: 2px;
+      position: absolute;
+      left: 16px;
+      top: 4px;
+      cursor: pointer;
+    }
   }
 }
 
 .modal__input:focus-within,
 .modal-textarea:focus-within {
   outline: 1px solid $decorColor;
-  transition: outline $slowChange;
-}
-
-.modal__input:focus-within + .modal__icon {
-  fill: $decorColor;
   transition: outline $slowChange;
 }
 
@@ -178,11 +174,3 @@
   visibility: hidden;
   opacity: 0;
 }
-
-
-
-
-
-
-
-
