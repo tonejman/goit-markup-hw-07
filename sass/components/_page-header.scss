@@ -26,47 +26,43 @@
       transition: color $slowChange;
     }
   }
-}
-
-
-.contact-header__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  line-height: 1.17;
-  list-style: none;
-  & .contact-header__item:not(:last-child) {
-    margin-right: 30px;
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    list-style: none;
+    & .contact-header__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-}
-
-.contact-header__item {
-  display: flex;
-  height: 100%;
-  &:hover,
-  &:focus {
-    --color3: #2196f3;
-    fill: var(--color3);
-    cursor: pointer;
-    transition: fill $slowChange;
+  &__item {
+    display: flex;
+    height: 100%;
+    &:hover,
+    &:focus {
+      --color3: #2196f3;
+      fill: var(--color3);
+      cursor: pointer;
+      transition: fill $slowChange;
+    }
+    &:hover > .contact-header__link,
+    &:focus > .contact-header__link {
+      color: $decorColor;
+      transition: color $slowChange;
+    }
+    & > .contact-header__icon:hover {
+      --color3: #2196f3;
+      fill: var(--color3);
+      transition: fill $slowChange;
+    }
   }
-  &:hover > .contact-header__link,
-  &:focus > .contact-header__link {
-    color: $decorColor;
-    transition: color $slowChange;
+  &__icon {
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
   }
-  & > .contact-header__icon:hover {
-    --color3: #2196f3;
-    fill: var(--color3);
-    transition: fill $slowChange;
-  }
-}
-
-.contact-header__icon {
-  display: flex;
-  margin-right: 10px;
-  height: 100%;
 }

@@ -46,26 +46,24 @@
   &__icon-item:not(:last-child) {
     margin-right: 10px;
   }
-}
-
-.team__icon-link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: fill 250ms;
-  transition: background-color 250ms;
-  transition-timing-function: $slowChange;
-  border-radius: 50%;
-  &:hover,
-  &:focus {
-    background-color: $decorColor;
-    --color5: #ffffff;
-    fill: var(--color5);
+  &__icon-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: fill 250ms;
     transition: background-color 250ms;
     transition-timing-function: $slowChange;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      background-color: $decorColor;
+      --color5: #ffffff;
+      fill: var(--color5);
+      transition: fill 250ms;
+      transition: background-color 250ms;
+      transition-timing-function: $slowChange;
+    }
   }
 }
-

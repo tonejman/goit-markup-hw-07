@@ -70,16 +70,15 @@
 &__item:not(:last-child) {
   margin-right: 10px;
 }
+&__title {
+  color: $jointColor;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 }
 
 .footer-contact {
   display: flex;
-}
-
-.footer-media__title {
-  color: $jointColor;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-info {
@@ -100,6 +99,22 @@
     display: flex;
     margin-bottom: 8px;
   }
+  &__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid $borderFooterColor;
+  background-color: $backgroundBlockColor;
+  color: $inputFotterColor;
+  filter: $dropShadowColor;
+  &::placeholder {
+    color: $inputFotterColor;
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: var(--bg-footer);
+  }
+}
 }
 
 .footer-button {
@@ -127,19 +142,4 @@
   }
 }
 
-.footer-news__input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  border-radius: 4px;
-  border: 1px solid $borderFooterColor;
-  background-color: $backgroundBlockColor;
-  color: $inputFotterColor;
-  filter: $dropShadowColor;
-  &::placeholder {
-    color: $inputFotterColor;
-    font-size: 16px;
-    line-height: 1.25;
-    background-color: var(--bg-footer);
-  }
-}
+

@@ -83,7 +83,6 @@ section {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contact-header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +98,6 @@ section {
 .contact-header__list .contact-header__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .contact-header__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +122,6 @@ section {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contact-header__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,9 +142,6 @@ section {
           align-items: center;
   margin-left: 93px;
 }
-.menu-nav .header-nav__item:not(:last-child) {
-  margin-right: 46px;
-}
 
 .header-nav {
   display: -webkit-box;
@@ -161,6 +155,9 @@ section {
   letter-spacing: 0.02em;
   line-height: 1.17;
   list-style: none;
+}
+.header-nav__item:not(:last-child) {
+  margin-right: 46px;
 }
 .header-nav__link {
   color: #212121;
@@ -392,7 +389,6 @@ section {
 .team__icon-item:not(:last-child) {
   margin-right: 10px;
 }
-
 .team__icon-link {
   width: 44px;
   height: 44px;
@@ -567,17 +563,16 @@ section {
 .footer-media__item:not(:last-child) {
   margin-right: 10px;
 }
+.footer-media__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 
 .footer-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer-media__title {
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-info {
@@ -606,40 +601,6 @@ section {
   display: flex;
   margin-bottom: 8px;
 }
-
-.footer-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 28px 10px 42px;
-  margin-left: 12px;
-  background-color: #2196f3;
-  border-radius: 4px;
-  border: 0;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.87;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-button:hover, .footer-button:focus {
-  -webkit-filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-.footer-button__icon {
-  margin-left: 24px;
-  --color: #ffffff;
-  fill: var(--color);
-}
-
 .footer-news__input {
   width: 358px;
   height: 50px;
@@ -680,6 +641,39 @@ section {
   font-size: 16px;
   line-height: 1.25;
   background-color: var(--bg-footer);
+}
+
+.footer-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 28px 10px 42px;
+  margin-left: 12px;
+  background-color: #2196f3;
+  border-radius: 4px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.87;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover, .footer-button:focus {
+  -webkit-filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.footer-button__icon {
+  margin-left: 24px;
+  --color: #ffffff;
+  fill: var(--color);
 }
 
 .modal {
@@ -787,14 +781,6 @@ section {
   top: 4px;
   cursor: pointer;
 }
-
-.modal__input:focus-within,
-.modal-textarea:focus-within {
-  outline: 1px solid #2196f3;
-  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-textarea {
   height: 120px;
   resize: none;
@@ -828,7 +814,6 @@ section {
   font-size: 12px;
   line-height: 1.17;
 }
-
 .modal-button {
   position: absolute;
   padding: 10px 76px;
@@ -852,7 +837,6 @@ section {
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .modal__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,6 +874,13 @@ section {
   cursor: pointer;
 }
 
+.modal__input:focus-within,
+.modal-textarea:focus-within {
+  outline: 1px solid #2196f3;
+  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -923,7 +914,6 @@ section {
   display: flex;
   gap: 8px;
 }
-
 .main-buttons__item {
   letter-spacing: 0.03em;
   border: 0;

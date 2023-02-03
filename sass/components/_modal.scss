@@ -87,49 +87,39 @@
       cursor: pointer;
     }
   }
-}
-
-.modal__input:focus-within,
-.modal-textarea:focus-within {
-  outline: 1px solid $decorColor;
-  transition: outline $slowChange;
-}
-
-.modal-textarea {
-  height: 120px;
-  resize: none;
-  margin-bottom: 10px;
-  padding: 12px 16px;
-  border-radius: 4px;
-  border: 1px solid $borderModalColor;
-  &::placeholder {
-    color: $placeholderModalColor;
-    font-size: 12px;
-    line-height: 1.17;
+  &-textarea {
+    height: 120px;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid $borderModalColor;
+    &::placeholder {
+      color: $placeholderModalColor;
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
-}
-
-.modal-button {
-  position: absolute;
-  padding: 10px 76px;
-  left: 164px;
-  bottom: 40px;
-  background-color: $decorColor;
-  border-radius: 4px;
-  border: 0;
-  color: $jointColor;
-  font-size: 16px;
-  line-height: 1.87;
-  transition: $slowChange;
-  &:hover,
-  &:focus {
-    filter: $underShadowColor;
-    transition: filter $slowChange;
-    cursor: pointer;
+  &-button {
+    position: absolute;
+    padding: 10px 76px;
+    left: 164px;
+    bottom: 40px;
+    background-color: $decorColor;
+    border-radius: 4px;
+    border: 0;
+    color: $jointColor;
+    font-size: 16px;
+    line-height: 1.87;
+    transition: $slowChange;
+    &:hover,
+    &:focus {
+      filter: $underShadowColor;
+      transition: filter $slowChange;
+      cursor: pointer;
+    }
   }
-}
-
-.modal__field {
+  &__field {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -156,6 +146,13 @@
     left: 19px;
     cursor: pointer;
   }
+}
+}
+
+.modal__input:focus-within,
+.modal-textarea:focus-within {
+  outline: 1px solid $decorColor;
+  transition: outline $slowChange;
 }
 
 .backdrop {

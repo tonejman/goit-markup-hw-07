@@ -3,9 +3,6 @@
   flex: 1;
   align-items: center;
   margin-left: 93px;
-  & .header-nav__item:not(:last-child) {
-    margin-right: 46px;
-  }
 }
 
 .header-nav {
@@ -16,6 +13,9 @@
   letter-spacing: 0.02em;
   line-height: 1.17;
   list-style: none;
+  &__item:not(:last-child) {
+    margin-right: 46px;
+  }
   &__link {
     color: $secondaryColor;
   }
